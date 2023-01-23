@@ -1,0 +1,11 @@
+@mixin font-lato ($fw, $fs)  {
+  font-family: 'Lato', sans-serif;
+  font-weight: $fw;
+  font-style: $fs;
+}
+
+@mixin font-montserrat ($fw, $fs)  {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $fw;
+  font-style: $fs;
+}
