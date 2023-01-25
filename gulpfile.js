@@ -19,7 +19,7 @@ const sass = gulpSass(dartSass);
 
 const serve = () => bs.init({
     server: {
-        baseDir: "./dist",
+        baseDir: "./",
         browser: "firefox",
     },
 });
@@ -47,9 +47,9 @@ const images = () => src('./src/images/**.*')
     .pipe(dest('./dist/images'))
     .pipe(bs.reload({stream: true}));
 
-const html = () => src('./index.html')
+const html = () => src('./src/html/index.html')
     .pipe(fileInclude())
-    .pipe(dest('./dist/'))
+    .pipe(dest('./'))
     .pipe(bs.reload({stream: true}));
 
 const cleanDest = () => src('./dist/*', {read: false}).pipe(clean());
