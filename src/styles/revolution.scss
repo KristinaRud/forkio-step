@@ -1,0 +1,101 @@
+@import "vars";
+@import "mixins";
+
+//revolution section
+.revolution {
+  text-align: center;
+}
+
+.revolution__sign{
+  @include font-montserrat (400, normal);
+  color: #848E97;
+  font-size: $fs14;
+  line-height: $lh14;
+  padding-top: 36px;
+  @media (min-width: 481px) {
+    line-height: $lh16;
+    padding-top: 42px;
+  }
+  @media (min-width: 993px) {
+    line-height: 15px;
+    padding-top: 48px;
+  }
+
+}
+.revolution__title {
+  @include font-montserrat (700, normal);
+  font-size: 26px;
+  line-height: 28px;
+  color: #635C73;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 27px;
+  @media (min-width: 481px) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-top: 93px;
+    margin-bottom: 43px;
+  }
+  @media (min-width: 993px) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-top: 66px;
+    margin-bottom: 35px;
+  }
+}
+
+.revolution__text{
+  @include font-lato(400, normal);
+  font-size: $fs14;
+  line-height: 20px;
+  color: #323232;
+ margin-bottom: 36px;
+  padding-left: 14px;
+  padding-right: 14px;
+  @media (min-width: 481px) {
+    font-size: 21px;
+    line-height: 32px;
+  }
+  @media (min-width: 993px) {
+    margin-bottom: 26px;
+  }
+}
+//revolution btn-icons
+.icon__list {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+ margin-bottom: 88px;
+  @media (min-width: 481px) {
+    margin-bottom: 98px;
+  }
+  @media (min-width: 993px) {
+    margin-bottom: 70px;
+  }
+}
+
+.icon__menu{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 5px;
+  @include font-montserrat (700, bold);
+  font-size: 12px;
+  line-height: 20px;
+  color: #323232;
+  border: solid 1px #c7c7c7;
+  border-radius: 3px;
+
+
+}
+.icon__block {
+display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 8px 3px 8px ;
+    background: #f6f8fa;
+  box-shadow: 5px 0 5px -5px #333;
+}
