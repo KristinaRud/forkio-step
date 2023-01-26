@@ -2,9 +2,7 @@
 @import "mixins";
 
 //revolution section
-.main-revolution {
-  padding-left: 24px;
-  padding-right: 24px;
+.revolution {
   text-align: center;
 }
 
@@ -13,14 +11,14 @@
   color: #848E97;
   font-size: $fs14;
   line-height: $lh14;
-  margin-top: 36px;
+  padding-top: 36px;
   @media (min-width: 481px) {
     line-height: $lh16;
-    margin-top: 42px;
+    padding-top: 42px;
   }
   @media (min-width: 993px) {
     line-height: 15px;
-    margin-top: 48px;
+    padding-top: 48px;
   }
 
 }
@@ -52,6 +50,8 @@
   line-height: 20px;
   color: #323232;
  margin-bottom: 36px;
+  padding-left: 14px;
+  padding-right: 14px;
   @media (min-width: 481px) {
     font-size: 21px;
     line-height: 32px;
