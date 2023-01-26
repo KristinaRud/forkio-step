@@ -1,23 +1,9 @@
-.container{
-    padding: 0 10px;
-    max-width: 320px;
-    margin: 0 auto;
-    @media (min-width: 481px) {
-        max-width: 768px;
-    }
-    @media (min-width: 993px) {
-        max-width: 1200px;
-    }
-    @media (min-width: 1200px) {
-        max-width: 1200px;
-    }
-}
 .header{
     background: url(./images/img_1.png) center/cover no-repeat;
     position: relative;
     padding-bottom: 243px;
     padding-top: 243px;  
-    height: 800px;
+    min-height: 800px;
 }
 .page__header{
     background-color: rgba(39, 38, 42, 1);
@@ -65,7 +51,7 @@
 }
 .logo{
     grid-area: logo;
-    justify-self: start;
+    justify-self: center;
     display: flex;
     align-items: center;
     gap: 17px;
@@ -85,6 +71,9 @@
         .logo__text{
             color: $white-color;
         }
+    }
+    @media (min-width:481px) {
+        justify-self: start;
     }
 }
 
@@ -107,12 +96,7 @@
     line-height: 15px;
     border: none;
     border-radius: 40px;
-    width: 119px;
-    height: 37px;
     color: rgba(255, 255, 255, 1);
-
-    grid-area: btn;
-    justify-self: end;
 
     &:hover{
         color: $main-color;
@@ -120,10 +104,15 @@
         border: 1px solid $main-color;
     }
 
+}
+.buy-btn{
+    grid-area: btn;
+    justify-self: end;
+    width: 119px;
+    height: 37px;
     @media (min-width:481px){
         width: 145px;
     }
-
 }
 .menu{
     grid-area: menu;
@@ -131,6 +120,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    justify-self: center;
     @media (min-width:993px){
         justify-self: end;
     }
@@ -269,6 +259,24 @@
     }
 }
 
+.header__intro__title{
+    @include font-montserrat(400, 'normal');
+    font-size: 48px;
+    line-height: 48px;
+    color: $white-color;
+}
+.header__intro__decr{
+    @include font-lato(400, 'normal');
+    font-size: 18px;
+    line-height: 24px;
+    color: $main-color;
+}
+.header__intro__ver{
+    @include font-montserrat(400, 'normal');
+    font-size: 14px;
+    line-height: 14px;
+    color: #848E97;
+}
 
 
 

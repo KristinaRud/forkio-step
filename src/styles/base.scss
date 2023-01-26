@@ -53,8 +53,9 @@ html{
 	box-sizing: inherit;
 }
 
-body{
+.container{
+    padding: 0 10px;
     min-width: 320px;
-	margin: 0 auto;
-    overflow-x: hidden;
+    margin: 0 auto;
+	max-width: 1200px;
 }
