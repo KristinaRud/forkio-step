@@ -6,10 +6,29 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 22px;
     @media (min-width: 481px) {
         background: url(./images/testmonials-bg2-1200.png) center/cover no-repeat;
         min-height: 769px;
+        padding-bottom: 19.5;
     }
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        border-top: 2px solid #645766;
+        max-width: 245px;
+        width: 100%;
+        bottom: 0;
+        @media (min-width:481px) {
+            max-width: 555px;
+            bottom: 7px;
+        }
+        @media (min-width:1200px) {
+            max-width: 780px;
+        }
+    }
+
 }
 .people-section{
     padding-top: 87px;
@@ -40,9 +59,11 @@
 }
 .people__list{
     display: grid;
+    justify-content: center;
     grid-column: 1fr;
     grid-row: repeat(6, 1fr);
     gap: 45px;
+    margin-bottom: 38px;
     @media (min-width:481px) {
         margin-bottom: 88px;
         grid-template-columns: repeat(2, minmax(100px, 354px));
