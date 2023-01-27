@@ -1,0 +1,117 @@
+.people__section{
+    background: url(./images/testmonials-bg2-320.png) center/cover no-repeat;
+    position: relative;
+    min-height: 1610px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 22px;
+    @media (min-width: 481px) {
+        background: url(./images/testmonials-bg2-1200.png) center/cover no-repeat;
+        min-height: 769px;
+        padding-bottom: 19.5;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        border-top: 2px solid #645766;
+        max-width: 245px;
+        width: 100%;
+        bottom: 0;
+        @media (min-width:481px) {
+            max-width: 555px;
+            bottom: 7px;
+        }
+        @media (min-width:1200px) {
+            max-width: 780px;
+        }
+    }
+
+}
+.people-section{
+    padding-top: 87px;
+    padding-bottom: 19.5px;
+    @media (min-width: 481px) {
+        padding-top: 108px;
+        padding-bottom: 18.5px;
+    }
+}
+.people__title{
+    @include font-montserrat(700, 'normal');
+    font-size: 42px;
+    line-height: 44px;
+    color:$white-color;
+    @media (min-width: 481px) {
+        font-size: 48px;
+        line-height: 50px;
+    }
+}
+.people-title{
+    margin-bottom: 53px;
+    @media (min-width:481px) {
+        margin-bottom: 88px;
+    }
+    @media (min-width:1200px) {
+        margin-bottom: 85px;
+    }
+}
+.people__list{
+    display: grid;
+    justify-content: center;
+    grid-column: 1fr;
+    grid-row: repeat(6, 1fr);
+    gap: 45px;
+    margin-bottom: 38px;
+    @media (min-width:481px) {
+        margin-bottom: 88px;
+        grid-template-columns: repeat(2, minmax(100px, 354px));
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 52px;
+        column-gap: 63px;
+        align-items: baseline;
+    }
+    @media (min-width:1200px) {
+        margin-bottom: 118px;
+        grid-template-columns: repeat(3, 345px);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 116px;
+        column-gap: 87px;
+        align-items: baseline;
+    }
+}
+
+img[alt=logo1]{
+    margin-bottom: 33px;
+}
+img[alt=logo2]{
+    margin-bottom: 29px;
+}
+img[alt=logo3]{
+    margin-bottom: 22px;
+}
+img[alt=logo4]{
+    margin-bottom: 33px;
+}
+img[alt=logo5]{
+    margin-bottom: 28px;
+}
+img[alt=logo6]{
+    margin-bottom: 24px;
+}
+  
+
+.people__item-txt{
+    @include font-lato(700, 'italic');
+    font-size: 16px;
+    line-height: 24px;
+    color: $white-color;
+}
+
+.people__title-bottom{
+    @include font-lato(400, 'normal');
+    color: #A291A5;
+    font-size: 14px;
+    line-height: 21px;
+}
