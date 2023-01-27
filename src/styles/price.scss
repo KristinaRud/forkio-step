@@ -1,0 +1,110 @@
+@import "vars";
+@import "mixins";
+.pricing {
+  background: url(./images/bg-pricing.png) center/cover no-repeat;
+
+}
+.pricing-banner {
+  text-align: center;
+}
+.pricing__title {
+  @include font-montserrat(700, normal);
+  font-size: 28px;
+  line-height: 42px;
+  color: $white-color;
+  padding-top: 14px;
+
+  @media (min-width: 481px) {
+    font-size: 42px;
+    line-height: 44px;
+    padding-top: 88px;
+  }
+  @media (min-width: 993px) {
+    font-size: 48px;
+    line-height: 50px;
+    padding-top: 112px;
+  }
+}
+.pricing__list{
+  padding: 32px 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 18px;
+  @media (min-width: 481px) {
+    padding: 39px 80px 153px;
+     grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 71px;
+  }
+  @media (min-width: 993px) {
+    padding: 112px 33px 144px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.pricing__item{
+  display: grid;
+  grid-template-columns: minmax(min-content, 1fr);
+    background: rgb(255, 255, 255, 0.11);
+  color: $white-color;
+}
+.pricing__item--dark {
+
+}
+.pricing__package {
+@include font-montserrat(400, normal);
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 36px 0;
+  background: rgb(255, 255, 255, 0.06);
+}
+
+.pricing__amount {
+ @include font-montserrat(700, normal);
+  font-size: 60px;
+  line-height: 62px;
+  margin: 30px 0 20px;
+  @media (min-width: 481px) {
+    line-height: 90px;
+  }
+}
+
+.pricing__count {
+  @include font-montserrat(400, normal);
+  text-transform: uppercase;
+  font-size: $fs14;
+  line-height: $lh16;
+  margin-bottom: 72px;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background-color: $main-color;
+    top: 38px;
+   left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.pricing__text {
+  @include font-montserrat(400, normal);
+  font-size: $fs16;
+  line-height: 18px;
+  margin-bottom: 37px;
+}
+.pricing-btn {
+ padding: 15px 37px;
+  max-width: min-content;
+  background: rgb(255, 255, 255, 0.15);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-bottom: 67px;
+  justify-self: center;
+  @media (min-width: 481px) {
+    margin-bottom: 39px;
+  }
+
+}
