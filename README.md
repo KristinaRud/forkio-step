@@ -2,7 +2,7 @@
 ## [DEMO](https://kristinarud.github.io/forkio-demo-html/)
 Список використаних технологій
 ````
-    Gulp, HTML, CSS, SCSS, Saas, JS
+    Gulp, HTML, CSS, SCSS, Sass, JS
 ````
 
 склад учасників проекту:
