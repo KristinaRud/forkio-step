@@ -30,36 +30,36 @@
 }
 
 .pricing__list {
-  padding: 32px 20px 10px;
+  padding: 32px 0 10px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 257px;
   row-gap: 18px;
-  justify-items: center;
+  justify-content: center;
   @media (min-width: 481px) {
-    padding: 39px 69px 153px;
+    padding: 39px 30px 94px;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 25px;
+      column-gap: 25px;
     row-gap: 30px;
     align-items: center;
   }
   @media (min-width: 993px) {
-    padding: 112px 33px 144px;
+    padding: 112px 20px 144px;
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .pricing__item {
-  display: grid;
-  width: 257px;
-  height: 457px;
-  grid-template-columns: minmax(min-content, 1fr);
+  padding-bottom: 30px;
   background: rgb(255, 255, 255, 0.11);
   color: $white-color;
-
+  @media (min-width: 481px){
+    height: 457px;
+  }
   &--dark {
-    width: 300px;
-    min-height: 560px;
     background: rgb(70, 48, 72, 0.84);
+    @media (min-width: 481px){
+      height: 560px;
+    }
   }
 }
 
@@ -105,7 +105,7 @@
   text-transform: uppercase;
   font-size: $fs14;
   line-height: $lh16;
-  margin-bottom: 72px;
+  margin-bottom: 67px;
   position: relative;
 
   &:after {
@@ -114,15 +114,15 @@
     width: 60px;
     height: 5px;
     background-color: $main-color;
-    top: 38px;
+    top: 33px;
     left: 50%;
     transform: translateX(-50%);
   }
 
   &--dark {
-    margin-bottom: 91px;
+    margin-bottom: 85px;
     &:after {
-      top: 46px;
+      top: 41px;
     }
   }
 }
@@ -131,9 +131,8 @@
   @include font-montserrat(400, normal);
   font-size: $fs16;
   line-height: 18px;
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   padding: 0 10px;
-
   &--dark {
     margin-bottom: 0;
   }
@@ -147,18 +146,11 @@
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  margin-bottom: 67px;
-  justify-self: center;
-
   &--dark {
-    width: 190px;
-    height: 52px;
-    margin-top: 83px;
-    margin-bottom: 0 !important;
+    padding: 19px 48px;
+    margin-top: 73px;
+    margin-bottom:40px;
   }
 
-  @media (min-width: 481px) {
-    margin-bottom: 39px;
-  }
 
 }
