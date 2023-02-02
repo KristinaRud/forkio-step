@@ -208,7 +208,7 @@
         padding:0;
     }
 }
-.menu__list-item{
+.menu__item{
     width: inherit;
     border-bottom: 3px solid #3B3B3B;
     font-size: 26px;
@@ -249,7 +249,7 @@
 .header__intro{
     text-align: center;
 }
-.header__intro__title{
+.header__title{
     @include font-montserrat(400, 'normal');
     font-size: 48px;
     line-height: 48px;
@@ -273,7 +273,7 @@
     }
 }
 
-.header__intro__decr{
+.header__decr{
     @include font-montserrat(400, 'normal');
     font-size: 18px;
     line-height: 24px;
@@ -290,7 +290,7 @@
     margin-top: 19px;
 }
 
-.header__intro__ver{
+.header__ver{
     @include font-montserrat(400, 'normal');
     font-size: 14px;
     line-height: 14px;
